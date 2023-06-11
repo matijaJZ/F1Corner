@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+body {
+    background-image: url("pozadinska_slika.jpg");
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* Stiliziranje sekcije s člancima */
+section {
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+section a {
+  text-decoration: underline;
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 30px;
+}
+article {
+  margin-bottom: 20px;
+}
+
+article h3 {
+  margin: 0;
+}
+
+article p {
+  margin-top: 10px;
+}
+
+article a {
+  color: #333;
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  #staza_spanjolske {
+    width: 300px;
+    height: auto;
+  }
+}
+
+
+
+/* Stiliziranje footera */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" >Početna</a>
+        <a href="../epizode.html">Epizode</a>
+        <a href="linkovi_svi_clanci.html">Članci</a>
+        <a href="../o_nama.html">O nama</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+      <section>
+        <a href="linkovi_svi_clanci.html">Nazad</a>
+        <h2>Utrka u Španjolskoj - 4.6.2023.</h2>
+        <p>Dugo očekivana utrka Formule 1 u Španjolskoj održana je 4.6.2023. na legendarnoj stazi Circuit de Barcelona-Catalunya.</p>
+        <img src="../img/spanjolska_staza.png" alt="Utrka u Španjolskoj" id="staza_spanjolske">
+        <p>Nakon Monaca selili smo se u Španjolsku za po još jednu uzbudljivu utrku.</p>
+        <h3>Promjene na stazi</h3>
+        <p>Na samoj stazi već i prije početka samog vikenda dočekale su nas neke promjene. Više nema šikane nakon 13 zavoja te je do 14 zavoja čisti flat out dio staze nakon kojeg slijedi brzi 14 zavoj do same start-cilj linije.</p>
+
+      </section>
+<footer>
+  <p>&copy; 2023 F1Corner. Sva prava pridržana.</p>
+</footer>
+</body>
+</html>
