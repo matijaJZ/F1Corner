@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vozaci_bolidi.css">
+    <title>Početna</title>
+    <style>
+                body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* Stiliziranje footera */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" >Početna</a>
+    <a href="epizode.html">Epizode</a>
+    <a href="linkovi_svi_clanci.html">Članci</a>
+    <a href="vozaci.html">Vozači</a>
+    <a href="bolidi.html">Bolidi</a>
+    <a href="o_nama.html">O nama</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<main class="main-vozaci content">
+    <section class="row">
+        <article class="vozac-kartica border-classic red-bull-vozac ">
+            <p class="vozac-ime">MAX <BR><span class="vozac-ime-bold">VERSTAPPEN</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Red Bull Racing</p>
+                <article class="vozac-boja-tima red-bull"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/MAXVER01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic red-bull-vozac mobitel">
+            <p class="vozac-ime">SERGIO <BR><span class="vozac-ime-bold">PEREZ</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Red Bull Racing</p>
+                <article class="vozac-boja-tima red-bull"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/SERPER01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/S/SERPER01_Sergio_Perez/serper01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic aston-martin-vozac">
+            <p class="vozac-ime">FERNANDO <BR><span class="vozac-ime-bold">ALONSO</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Aston Martin</p>
+                <article class="vozac-boja-tima aston-martin"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/FERALO01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FERALO01_Fernando_Alonso/feralo01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic aston-martin-vozac">
+            <p class="vozac-ime">LANCE <BR><span class="vozac-ime-bold">STROLL</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Aston Martin</p>
+                <article class="vozac-boja-tima aston-martin"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/LANSTR01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANSTR01_Lance_Stroll/lanstr01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="vozac-kartica border-classic mercedes-vozac">
+            <p class="vozac-ime">LEWIS <BR><span class="vozac-ime-bold">HAMILTON</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Mercedes</p>
+                <article class="vozac-boja-tima mercedes"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/LEWHAM01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic mercedes-vozac">
+            <p class="vozac-ime">GEORGE <BR><span class="vozac-ime-bold">RUSSELL</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Mercedes</p>
+                <article class="vozac-boja-tima mercedes"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/GEORUS01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GEORUS01_George_Russell/georus01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic ferrari-vozac">
+            <p class="vozac-ime">CHARLES <BR><span class="vozac-ime-bold">LECLERC</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Ferrari</p>
+                <article class="vozac-boja-tima ferrari"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/CHALEC01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic ferrari-vozac">
+            <p class="vozac-ime">CARLOS <BR><span class="vozac-ime-bold">SAINZ</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Ferrari</p>
+                <article class="vozac-boja-tima ferrari"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/CARSAI01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="vozac-kartica border-classic mclaren-vozac">
+            <p class="vozac-ime">LANDO <BR><span class="vozac-ime-bold">NORRIS</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">McLaren</p>
+                <article class="vozac-boja-tima mclaren"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/LANNOR01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANNOR01_Lando_Norris/lannor01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic mclaren-vozac">
+            <p class="vozac-ime">OSCAR <BR><span class="vozac-ime-bold">PIASTRI</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">McLaren</p>
+                <article class="vozac-boja-tima mclaren"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/OSCPIA01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OSCPIA01_Oscar_Piastri/oscpia01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic alpine-vozac">
+            <p class="vozac-ime">PIERRE <BR><span class="vozac-ime-bold">GASLY</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Alpine</p>
+                <article class="vozac-boja-tima alpine"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/PIEGAS01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic alpine-vozac">
+            <p class="vozac-ime">ESTEBAN <BR><span class="vozac-ime-bold">OCON</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Alpine</p>
+                <article class="vozac-boja-tima alpine"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/ESTOCO01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="vozac-kartica border-classic haas-vozac">
+            <p class="vozac-ime">KEVIN <BR><span class="vozac-ime-bold">MAGNUSSEN</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Haas</p>
+                <article class="vozac-boja-tima haas"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/KEVMAG01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/K/KEVMAG01_Kevin_Magnussen/kevmag01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic haas-vozac">
+            <p class="vozac-ime">NICO <BR><span class="vozac-ime-bold">HULKENBERG</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Haas</p>
+                <article class="vozac-boja-tima haas"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/NICHUL01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic alfa-romeo-vozac">
+            <p class="vozac-ime">VALTTERI <BR><span class="vozac-ime-bold">BOTTAS</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Alfa Romeo</p>
+                <article class="vozac-boja-tima alfa-romeo"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/VALBOT01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic alfa-romeo-vozac">
+            <p class="vozac-ime">ZHOU <BR><span class="vozac-ime-bold">GUANYU</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Alfa Romeo</p>
+                <article class="vozac-boja-tima alfa-romeo"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/GUAZHO01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GUAZHO01_Guanyu_Zhou/guazho01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="vozac-kartica border-classic alpha-tauri-vozac">
+            <p class="vozac-ime">YUKI <BR><span class="vozac-ime-bold">TSUNODA</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">AlphaThauri</p>
+                <article class="vozac-boja-tima alpha-tauri"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/YUKTSU01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/Y/YUKTSU01_Yuki_Tsunoda/yuktsu01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic alpha-tauri-vozac">
+            <p class="vozac-ime">NYCK <BR><span class="vozac-ime-bold">DE VRIES</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">AlphaThauri</p>
+                <article class="vozac-boja-tima alpha-tauri"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/NYCDEV01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NYCDEV01_Nyck_De%20Vries/nycdev01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic williams-vozac">
+            <p class="vozac-ime">ALEXANDER <BR><span class="vozac-ime-bold">ALBON</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Williams</p>
+                <article class="vozac-boja-tima williams"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/ALEALB01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/A/ALEALB01_Alexander_Albon/alealb01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+        <article class="vozac-kartica border-classic williams-vozac">
+            <p class="vozac-ime">LOGAN <BR><span class="vozac-ime-bold">SARGEANT</span></p>
+            <section class="vozac-tim-boja">
+                <p class="vozac-tim">Williams</p>
+                <article class="vozac-boja-tima williams"></article>
+            </section>
+            <section class="vozac-slika-broj">
+                <img src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/2018-redesign-assets/drivers/number-logos/LOGSAR01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-broj">
+                <img src="https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LOGSAR01_Logan_Sargeant/logsar01.png.transform/2col/image.png" alt="Slika clanka" class="vozac-slika">
+            </section>
+        </article>
+    </section>
+
+</main>
+
+
+
+<footer>
+    <p>&copy; 2023 F1Corner. Sva prava pridržana.</p>
+</footer>
+</body>
+</html>

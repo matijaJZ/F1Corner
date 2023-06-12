@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vozaci_bolidi.css">
+    <title>Početna</title>
+    <style>
+                body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* Stiliziranje footera */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" >Početna</a>
+    <a href="epizode.html">Epizode</a>
+    <a href="linkovi_svi_clanci.html">Članci</a>
+    <a href="vozaci.html">Vozači</a>
+    <a href="bolidi.html">Bolidi</a>
+    <a href="o_nama.html">O nama</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<main class="main-bolidi content">
+    <section class="row">
+        <article class="bolidi-kartica border-classic red-bull-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Red Bull Racing</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/red-bull-racing-logo.png.transform/2col/image.png" alt="RB" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci">
+                <p class="bolidi-imena">Max <BR><span class="vozac-ime-bold">VERSTAPPEN</span></p>
+                <article class="vozac-boja-tima red-bull"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Sergio <BR><span class="vozac-ime-bold">PEREZ</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/red-bull-racing.png.transform/4col/image.png" alt="Red Bull Racing">
+            </section>
+        </article>
+        <article class="bolidi-kartica border-classic aston-martin-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Aston Martin</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/aston-martin-logo.png.transform/2col/image.png" alt="AM" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci">
+                <p class="bolidi-imena">Fernando <BR><span class="vozac-ime-bold">ALONSO</span></p>
+                <article class="vozac-boja-tima aston-martin"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Lance <BR><span class="vozac-ime-bold">STROLL</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/aston-martin.png.transform/4col/image.png" alt="Aston Martin">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="bolidi-kartica border-classic mercedes-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Mercedes</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/mercedes-logo.png.transform/2col/image.png" alt="MR" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci">
+                <p class="bolidi-imena">Lewis <BR><span class="vozac-ime-bold">HAMILTON</span></p>
+                <article class="vozac-boja-tima mercedes"></article>
+                <p class="bolidi-imena bolidi-imena-desno">George <BR><span class="vozac-ime-bold">RUSSELL</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/mercedes.png.transform/4col/image.png" alt="Mercedes">
+            </section>
+        </article>
+        <article class="bolidi-kartica border-classic ferrari-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Ferrari</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/ferrari-logo.png.transform/2col/image.png" alt="FR" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci ">
+                <p class="bolidi-imena">Charles <BR><span class="vozac-ime-bold">LECLERC</span></p>
+                <article class="vozac-boja-tima ferrari"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Carlos <BR><span class="vozac-ime-bold">SAINZ</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/ferrari.png.transform/4col/image.png" alt="Ferrari">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="bolidi-kartica border-classic mclaren-vozac">
+            <section class="bolidi-ime-logo">
+                <p>McLaren</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/mclaren-logo.png.transform/2col/image.png" alt="MC" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci">
+                <p class="bolidi-imena">Lando <BR><span class="vozac-ime-bold">NORRIS</span></p>
+                <article class="vozac-boja-tima mclaren"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Oscar <BR><span class="vozac-ime-bold">PIASTRI</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/mclaren.png.transform/4col/image.png" alt="McLaren">
+            </section>
+        </article>
+        <article class="bolidi-kartica border-classic alpine-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Alpine</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/alpine-logo.png.transform/2col/image.png" alt="AP" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci ">
+                <p class="bolidi-imena">Pierre <BR><span class="vozac-ime-bold">GASLY</span></p>
+                <article class="vozac-boja-tima alpine"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Esteban <BR><span class="vozac-ime-bold">OCON</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alpine.png.transform/4col/image.png" alt="Alpine">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="bolidi-kartica border-classic haas-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Haas F1 Team</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/haas-f1-team-logo.png.transform/2col/image.png" alt="HS" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci">
+                <p class="bolidi-imena">Kevin <BR><span class="vozac-ime-bold">Maggnussen</span></p>
+                <article class="vozac-boja-tima haas"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Nico <BR><span class="vozac-ime-bold">HULKENBERG</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/haas-f1-team.png.transform/4col/image.png" alt="Haas F1 Team">
+            </section>
+        </article>
+        <article class="bolidi-kartica border-classic alfa-romeo-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Alfa Romeo</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/alfa-romeo-logo.png.transform/2col/image.png" alt="AR" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci ">
+                <p class="bolidi-imena">Valterri <BR><span class="vozac-ime-bold">BOTTAS</span></p>
+                <article class="vozac-boja-tima alfa-romeo"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Guanyu <BR><span class="vozac-ime-bold">ZHOU</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alfa-romeo.png.transform/4col/image.png" alt="Alfa Romeo">
+            </section>
+        </article>
+    </section>
+    <section class="row">
+        <article class="bolidi-kartica border-classic alpha-tauri-vozac">
+            <section class="bolidi-ime-logo">
+                <p>AlphaTauri</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/alphatauri-logo.png.transform/2col/image.png" alt="AT" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci">
+                <p class="bolidi-imena">Nyck <BR><span class="vozac-ime-bold">DE VRIES</span></p>
+                <article class="vozac-boja-tima alpha-tauri"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Yuki <BR><span class="vozac-ime-bold">TSUNODA</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alphatauri.png.transform/4col/image.png" alt="AlphaTauri">
+            </section>
+        </article>
+        <article class="bolidi-kartica border-classic williams-vozac">
+            <section class="bolidi-ime-logo">
+                <p>Williams</p>
+                <img src="https://media.formula1.com/content/dam/fom-website/teams/2023/williams-logo.png.transform/2col/image.png" alt="W" class="bolidi-logo">
+            </section>
+            <section class="bolidi-vozaci ">
+                <p class="bolidi-imena">Alexander <BR><span class="vozac-ime-bold">ALBON</span></p>
+                <article class="vozac-boja-tima williams"></article>
+                <p class="bolidi-imena bolidi-imena-desno">Logan <BR><span class="vozac-ime-bold">SARGEANT</span></p>
+            </section>
+            <section class="bolidi-bolid">
+                <img src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/williams.png.transform/4col/image.png" alt="Williams">
+            </section>
+        </article>
+    </section>
+</main>
+
+
+<footer>
+    <p>&copy; 2023 F1Corner. Sva prava pridržana.</p>
+</footer>
+</body>
+</html>
