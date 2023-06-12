@@ -385,4 +385,8 @@
         justify-content: center;
         margin: 1.5rem 0 0 1rem;
     }
+    img {
+        width: 90%;
+        height: auto;
+    }
 }
