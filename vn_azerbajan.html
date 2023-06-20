@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Početna</title>
+    <style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #000000;
+        border: solid black 1px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Osnovni stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Stil za sekcije */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Stil za raspored */
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Stil za kontakt informacije */
+ul li:first-child {
+    margin-top: 10px;
+}
+
+/* Stil za linkove */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stiliziranje footera */
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" >Početna</a>
+        <a href="epizode.html">Epizode</a>
+        <a href="linkovi_svi_clanci.html">Članci</a>
+        <a href="vozaci.html">Vozači</a>
+        <a href="bolidi.html">Bolidi</a>
+        <a href="online_utrke.html">Online utrke</a>
+        <a href="o_nama.html">O nama</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+<h1>Zagreb Online F1 Utrka</h1>
+    <img src="azerb_staza.avif" alt="Slika utrke">
+
+    <h2>Detalji utrke</h2>
+    <ul>
+        <li><strong>Datum:</strong> 30.6.2023</li>
+        <li><strong>Vrijeme:</strong> 20:00</li>
+        <li><strong>Mjesto:</strong> Baku City Circuit</li>
+    </ul>
+
+    <h2>Opis događaja</h2>
+    <p>Zagreb Online F1 Utrka pruža priliku svim entuzijastima brzine da se natječu na virtualnoj stazi inspiriranoj svjetski poznatom Formulom 1. Ova online utrka donosi uzbuđenje trkanja iz udobnosti vašeg doma.</p>
+
+    <h2>Kategorija</h2>
+    <p>Formula 1 online utrka</p>
+
+    <h2>Kotizacija</h2>
+    <p>Cijena kotizacije: 7€ po vozaču</p>
+
+    <h2>Raspored</h2>
+    <ul>
+        <li>Registracija i prijava: do 29.6.2023</li>
+        <li>Slobodni trening od 15 min: 18:15</li>
+        <li>Kvalifikacije: 19:00</li>
+        <li>Utrka: 20:00</li>
+    </ul>
+
+    <h2>Nagrade</h2>
+    <p>Najbolje plasirani vozači bit će nagrađeni prema sljedećim kategorijama:</p>
+    <ol>
+        <li>1. mjesto: 50€</li>
+        <li>2. mjesto: 30€</li>
+        <li>3. mjesto: 20€</li>
+    </ol>
+
+    <h2>Kako se prijaviti?</h2>
+    <ol>
+        <li>Ispunite obrazac za prijavu s potrebnim podacima.</li><br>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScvHDvwyWCDpz2YSMlDarJu93z0XMF4LSupJBdp5AC9pj8QTw/viewform?usp=sf_link">Link</a> za obrazac.</li><br>
+        <li>Nakon što primimo vašu prijavu, poslat ćemo vam sve potrebne informacije i upute za pristup utrci na vaš email.</li>
+    </ol>
+
+    <h2>Dodatne informacije</h2>
+    <p>Za sva dodatna pitanja i informacije, molimo kontaktirajte nas putem:</p>
+    <ul>
+        <li>E-mail: <a href="mailto:e-mail_adresa_organizatora">f1corner.club@gmail.com</a></li>
+        <li>Telefon: +385 091 593 10 66</li>
+    </ul>
+
+    <p>Pridružite nam se i doživite nevjerojatno iskustvo virtualne F1 utrke!</p>
+
+    <img src="DALL·E 2023-05-22 11.37.48 - podcast by Matija and Andro.png" alt="Slika organizatora">
+
+    
+    <footer>
+        <p>&copy; 2023 F1Corner. Sva prava pridržana.</p>
+      </footer>
+</body>
+</html>
