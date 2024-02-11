@@ -67,10 +67,10 @@
 .haas{
     background-color: #B6BABD;
 }
-.alfa-romeo{
-    background-color: #C92D4B;
+.kick-sauber{
+    background-color: #00E701;
 }
-.alpha-tauri{
+.RB{
     background-color: #5E8FAA;
 }
 .williams{
@@ -123,13 +123,13 @@
     transition: 0.3s;
     cursor: pointer;
 }
-.alfa-romeo-vozac:hover{
-    border-bottom: 0.4rem solid #C92D4B;
-    border-right: 0.4rem solid #C92D4B;
+.kick-sauber-vozac:hover{
+    border-bottom: 0.4rem solid #00E701;
+    border-right: 0.4rem solid #00E701;
     transition: 0.3s;
     cursor: pointer;
 }
-.alpha-tauri-vozac:hover{
+.RB-vozac:hover{
     border-bottom: 0.4rem solid #5E8FAA;
     border-right: 0.4rem solid #5E8FAA;
     transition: 0.3s;
